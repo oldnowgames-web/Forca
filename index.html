@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jogo da Forca</title>
+<link href="https://fonts.googleapis.com/css2?family=Bevan&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="top">
+  <div><h1>Jogo da Forca</h1><p id="cat"></p></div>
+  <div id="stats"><div id="lives" aria-label="Vidas"></div><div>Vitórias <b id="w">0</b> · Derrotas <b id="l">0</b></div><button id="back" class="lnk">Trocar tema</button> <button class="lnk mutebtn">Som: ligado</button></div>
+</div>
+<div id="hint">Arraste para girar a cena</div>
+<div id="panel">
+  <div id="word" aria-live="polite"></div>
+  <p id="msg"></p>
+  <div id="keys"></div>
+  <button id="again">Nova palavra</button>
+</div>
+<div id="menu">
+  <div id="s1" class="scr" style="display:flex"><h2>Jogo da Forca</h2><p>Descubra a palavra e salve o boneco antes que as vidas acabem.</p><button id="play" class="big">Jogar</button><button class="lnk mutebtn">Som: ligado</button></div>
+  <div id="s2" class="scr" style="display:none"><h3>Escolha um tema</h3><div id="cats"></div><button id="menuback" class="lnk">Voltar</button></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
